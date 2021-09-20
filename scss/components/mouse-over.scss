@@ -1,0 +1,77 @@
+
+/********************************************************************************/
+/* Solo para ejemplo de mouse over 1
+/********************************************************************************/
+#pag-textos-mouseover1 {
+  .mouse-over-one {
+    vertical-align: top;
+    .button {
+      background: transparent;
+      border: 1px solid $tooltip-color-200;
+      float: left;
+      margin: 10px;
+      text-align: center;
+      font-weight: 700;
+      padding: 10px;
+      height: 35px;
+      width: 35px;
+      border-radius: 35px;
+      line-height: 14px;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        background: $tooltip-color-200;
+        color: #fff;
+      }
+    }
+  }
+  .contenido_sobre {
+    padding: 1.6rem 2.4rem;
+    text-align: justify;
+    box-shadow: $box-shadow-12;
+    background: #E9EDFA;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    h5 {
+      margin: 0;
+    }
+  }
+  .element {
+    height: 100px;
+    overflow: auto;
+  }
+}
+
+
+/********************************************************************************/
+/* Solo para ejemplo de mouse over 2
+/********************************************************************************/
+#pag-textos-mouseover2 {
+  .mouse-over {
+    background: transparent;
+    border: 1px solid $tooltip-color-200;
+    float: left;
+    margin: 10px;
+    text-align: center;
+    font-weight: 700;
+    padding: 10px;
+    height: 35px;
+    width: 35px;
+    border-radius: 35px;
+    line-height: 14px;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background: $tooltip-color-200;
+      color: #fff;
+    }
+  }
+  .contenido_sobre {
+    padding: 10px;
+    text-align: justify;
+    box-shadow: 7px 7px 5px #cccccc;
+    background: #ffffff;
+    border: 1px solid #aaa;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+}

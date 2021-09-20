@@ -1,0 +1,21 @@
+.button,
+.w-content-controler,
+.wf-content-controler {
+  cursor: pointer;
+  &.general {
+    background-color: #fff;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 17px;
+    color: $color-font-200;
+    border: 1px solid $color-font-200;
+    margin: 20px;
+    transition: all 0.2s ease-in-out;
+    &.active, &:hover {
+      background-color: $color-font-300;
+      color: #fff;
+    }
+  }
+}

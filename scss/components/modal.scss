@@ -1,0 +1,19 @@
+.ui-widget-header {
+  border: 1px solid $modal-header-color;
+  background: $modal-header-color;
+  color: #fff;
+  font-weight: bold;
+  .ui-button {
+    display: block;
+    color: blue;
+    border: 1px solid#fff;
+    background: transparent;
+    padding: 1.1rem;
+    span {
+      filter: brightness(5);
+    }
+    &:hover, &:active {
+      background: $color-primary;
+    }
+  }
+}

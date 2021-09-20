@@ -1,0 +1,59 @@
+
+/********************************************************************************/
+/* SPECIFIC ACTIVITIES: CLOZE
+/********************************************************************************/
+.jpit-activities-cloze {
+  p {
+    line-height: 30px;
+  }
+  select {
+    border: 1px solid $tooltip-color-200;
+    border-radius: 15px;
+    background-color: #fff;
+  }
+  .verify_container {
+    text-align: center;
+  }
+  input {
+    position: relative;
+    &[type="text"] {
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid $tooltip-color-200;
+      width: 100px;
+      text-align: center;
+    }
+    &.wrong {
+      color: #d60c1b;
+    }
+  }
+  span {
+    &.correct, &.wrong {
+      position: relative;
+    }
+  }
+} 
+
+.jpit-activities-cloze span.correct:after,
+.jpit-activities-cloze input.correct:after {
+  background: url(../img/sprite.png) no-repeat -1280px -100px;
+  position: absolute;
+  right: -20px;
+  width: 40px;
+  height: 30px;
+  content: "";
+  top: -5px;
+  z-index: 2;
+}
+
+.jpit-activities-cloze span.wrong:after,
+.jpit-activities-cloze input.wrong:after {
+  content: "";
+  background: url(../img/sprite.png) no-repeat -1280px -140px;
+  position: absolute;
+  right: -20px;
+  width: 30px;
+  height: 30px;
+  top: -5px;
+  z-index: 2;
+}

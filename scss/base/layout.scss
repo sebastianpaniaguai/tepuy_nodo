@@ -1,0 +1,74 @@
+.scorm-container {
+  @include make-container(12.8vw);
+  width: 90vw;
+}
+
+p {
+  margin-bottom: $paragraph-margin-bottom;
+}
+
+
+ul.data_list {
+  
+}
+
+ul.data_list li {
+  padding-bottom: 10px;
+  &::marker {
+    color: $bullet-color;
+    font-size: 1.8rem;
+  }
+}
+
+.subpage{
+  &.credits {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    &::before {
+      content: "";
+      background-image: url(../img/decore_texture.png);
+      background-size: cover;
+      width: 200px;
+      height: 200px;
+      left: 0;
+      bottom: 75px;
+      position: absolute;
+      z-index: 10;
+    }
+  }
+  .credits__members {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 10px;
+    width: 100%;
+    margin: 2.4rem 0;
+    & > * {
+      text-align: left;
+      font-weight: bold;
+    }
+    p {
+      color: #B8B3F2;
+    }
+  }
+   h3 {
+     color: #fff;
+   }
+
+  .credits__content {
+    padding: 10rem;
+    background-color: $color-primary-dark;
+    border-radius: 15px;
+    color: #fff;
+  }
+
+  .nodoLabLogo {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+  

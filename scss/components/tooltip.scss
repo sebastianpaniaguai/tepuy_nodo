@@ -1,0 +1,32 @@
+
+/********************************************************************************/
+/* SPECIAL CONTENT: Tooltip
+/********************************************************************************/
+.tooltip {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+}
+
+sup.tooltip {
+  font-weight: bold;
+  padding-left: 3px;
+  color: #5fb0b7;
+  font-style: italic;
+}
+
+.text_tooltip {
+  padding: 10px;
+  line-height: 10px;
+}
+
+.ui-tooltip-content {
+  word-wrap: break-word;
+}
+
+.ui-tooltip {
+  background-color: #E9EDFA !important;
+  border-radius: 8px;
+  box-shadow: $box-shadow-12;
+  border: none !important;
+}

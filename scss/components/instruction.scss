@@ -1,0 +1,96 @@
+
+.instruction,
+.animation_image .label{
+  font-size: 12px;
+  text-align: center;
+  background-color: $tooltip-color;
+  display: table;
+  margin: 10px auto;
+  font-style: italic;
+  padding: 5px 15px;
+  border-radius: 20px;
+  color: #fff;
+  position: relative;
+  padding-left: 30px;
+  a {
+    color:  rgba($color: #fff, $alpha: 0.8);
+  }
+  i {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+  &[type="alert"] {
+    font-weight: bold;
+  }
+  em {
+    color:  rgba($color: #fff, $alpha: 0.8);
+  }
+
+  .ion-information-circled:before {
+    content: "\f14a";
+    background-color: $tooltip-color-200;
+    color: #fff;
+    position: absolute;
+    left: -10px;
+    padding: 10px;
+    border-radius: 50%;
+    top: -4px;
+    font-weight: normal;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    height: 4rem;
+    width: 4rem;
+  }
+  
+ .ion-alert-circled:before {
+  content: "\f100";
+  background-color: $tooltip-color-200;
+  color: #fff;
+  position: absolute;
+  left: -10px;
+  padding: 10px;
+  border-radius: 50%;
+  top: -4px;
+  font-weight: normal;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+      height: 4rem;
+    width: 4rem;
+}
+
+ .ion-nuclear:before {
+  content: "\f2a4";
+  background-color: $tooltip-color-200;
+  color: #fff;
+  position: absolute;
+  left: -10px;
+  padding: 10px;
+  border-radius: 50%;
+  top: -4px;
+  font-weight: normal;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+      height: 4rem;
+    width: 4rem;
+}
+
+ .ion-help-circled:before {
+  content: "\f143";
+  background-color: $tooltip-color-200;
+  color: #fff;
+  position: absolute;
+  left: -10px;
+  padding: 10px;
+  border-radius: 50%;
+  top: -4px;
+  font-weight: normal;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+      height: 4rem;
+    width: 4rem;
+}
+}

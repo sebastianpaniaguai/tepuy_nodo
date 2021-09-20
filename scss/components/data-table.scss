@@ -1,0 +1,44 @@
+
+/********************************************************************************/
+/* SPECIAL CONTENT: Data tables
+/********************************************************************************/
+.datatable {
+  border: 1px solid $tooltip-color-200;
+  border-spacing: 0;
+  border-collapse: none;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  thead th{
+    padding: 5px;
+    text-align: center;
+    background-color: $tooltip-color-200;
+    border: 1px solid $tooltip-color-200;
+    border-top-width: 0;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 13px;
+    &:first-child {
+      border-top-left-radius: 5px;
+    }  
+    &:last-child {
+      border-top-right-radius: 5px;
+    }
+  }
+  td {
+    color: $tooltip-color-200;
+    padding: 5px;
+    border-right: 1px solid $tooltip-color-200;
+    border-left: 1px solid $tooltip-color-200;
+    border-top-width: 0;
+    empty-cells: show;
+  }
+  .odd td {
+    background-color: #f0f1f1;
+  }
+  tfoot td {
+    background-color: rgba($tooltip-color-200, 0.1);
+    font-weight: bold;
+    color: $tooltip-color-200;
+    border: 1px solid;
+  }
+}

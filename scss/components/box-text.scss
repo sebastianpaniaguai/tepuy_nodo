@@ -1,0 +1,118 @@
+
+/********************************************************************************/
+/* HIGHLIGHTED BOXES
+/********************************************************************************/
+.box-text {
+  background-color: $matiz-bg-color;
+  max-width: 800px;
+  margin: 30px auto;
+  position: relative;
+  padding: 20px;
+  text-align: justify;
+  border-radius: 10px;
+  &:before {
+    content: "";
+    background: url(../img/boxes.png) no-repeat center;
+    background-size: 680%;
+    width: 64px;
+    height: 0;
+    padding-top: 64px;
+    position: absolute;
+    left: -35px;
+    top: -15px;
+    bottom: 0;
+  }
+  .box_body {
+    padding: 5px 15px;
+  }
+  & > .title {
+    font-size: 18px;
+    margin: 0 0 5px 0;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  /********* box_important ********/
+  &.important {
+    .title {color: $important-color-title;}
+    .box_body {
+      p {color: $important-color-body;}
+    }
+    &::before {
+      background-position: 4% center;
+    }
+  }
+
+  /********* box_example ********/
+  &.example {
+    .title {color: $ejemplo-color-title;}
+    .box_body {
+      p {color: $ejemplo-color-body;}
+    }
+    &:before {
+      background-position: 27% center;
+    }
+  }
+
+  /********* box_note ********/
+  &.note {
+    .title {color: $anotaciones-color-title;}
+    .box_body {
+      p {color: $anotaciones-color-body;}
+    }
+    &:before {
+      background-position: 50% center;
+    }
+  }
+  /********* box link ********/
+  &.link {
+    .title {color: $enlace-color-title;}
+    .box_body {
+      p {color: $enlace-color-body;}
+    }
+    &:before {
+      background-position: 72.5% center;
+    }
+  }
+  /********* box connection ********/
+  &.connection {
+    background-color: #ffffff;
+    border-top: 2px;
+    position: relative;
+    .box_body {
+      p {color: $transicion-color-body;}
+    }
+    &::before {
+      background: none;
+      position: absolute;
+      content: ' ';
+      width: 300px;
+      height: 4px;
+      padding-top: 0;
+      background-color: $transicion-color;
+      border-radius: 5px;
+      top: 0;
+      left: 0;
+    }
+    &::after {
+      background: none;
+      position: absolute;
+      content: ' ';
+      width: 300px;
+      height: 3px;
+      background-color: $transicion-color;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.about {
+  background: transparent;
+  color: #40238A;
+  font-size: 11px;
+}
+.about strong {
+  color: #40238A;
+  font-weight: normal;
+}

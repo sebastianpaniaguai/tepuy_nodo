@@ -1,0 +1,4 @@
+#EXCLUDED FILES FROM GIT#
+*.rar
+temp
+node_modules

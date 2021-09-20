@@ -1,0 +1,172 @@
+
+/********************************************************************************/
+/* PAGINATION
+/********************************************************************************/
+.ctrl-pagination {
+  position: relative;
+  margin-bottom: 10px;
+  width: 98%;
+  float: left;
+  height: 300px;
+  overflow: auto;
+  background-color: #f7f8fc;
+  padding: 20px;
+  color: #2b2d63;
+  border-radius: 30px;
+  ul{
+    &.layers {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      overflow: auto;
+      li.layer {
+        margin: 0;
+        padding: 5px 10px 0 10px;
+      }
+    }
+    &.pagination {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      float: right;
+      margin: 5px 0 0;
+      .arrows {
+        font-size: 20px;
+      }
+      &.numeric {
+        li {
+          height: 15px;
+          width: 25px;
+          text-align: center;
+          margin-left: 2px;
+          line-height: 15px;
+          &.active, &.current {
+            div {
+              background-color: $tooltip-color-200;
+              color: #ffffff;        
+            }
+          }
+          & > * {
+            border-radius: 15px;
+          }
+        }
+      }
+    }
+  }
+  &.horizontal{
+    ul.pagination li {
+      float: left;
+      color: $tooltip-color-200;
+      font-size: 12px;
+      line-height: 24px;
+      font-weight: bold;
+      &.position {
+        border: 1px solid $tooltip-color-200;
+        border-radius: 10px;
+        padding: 0 5px;
+      }
+    }
+  } 
+  .previous {
+    width: 21px;
+    height: 21px;
+    float: left;
+    cursor: pointer;
+    margin-top: 1px;
+    margin-right: 3px;
+    background: url(../img/sprite_iconos.png) no-repeat 1.5% center;
+    background-size: 1100%;
+    &:hover {
+      filter: grayscale(1);
+    }
+  }
+  .next {
+    width: 21px;
+    height: 21px;
+    float: left;
+    cursor: pointer;
+    margin-top: 1px;
+    margin-left: 3px;
+    background: url(../img/sprite_iconos.png) no-repeat 14.5% center;
+    background-size: 1100%;
+    &:hover {
+      filter: grayscale(1);
+    }
+  }
+  .label_current {
+    border-radius: 50px;
+    bottom: 5px;
+    color: #ffffff;
+    background-color: $tooltip-color-200;
+    font-size: 3rem;
+    position: absolute;
+    text-align: center;
+    height: 35px;
+    width: 35px;
+    padding: 5px;
+    line-height: 3rem;
+  }
+  & > .layers > .layer > h5 {
+    margin-top: 0;
+  }
+  &.sides{
+    .button.previous {
+      position: absolute;
+      left: 0;
+      top: 50%;
+    }
+    .button.next {
+      position: absolute;
+      right: 0;
+      top: 50%;
+    }
+    .position {
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+      margin-left: -50px;
+      color: $tooltip-color-200;
+      background-color: #ffffff;
+      padding: 5px 20px;
+      border: 1px solid;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  } 
+}
+
+/* Vertical pagination */
+.ctrl-pagination.vertical {
+  ul.pagination {
+    position: absolute;
+    right: 12px;
+    top: 0;
+    bottom: 0;
+  }
+  .pagination.arrows .button {
+    position: absolute;
+    right: 0;
+  }
+  .button.next {
+    bottom: 2px;
+    transform: rotate(90deg);
+  }
+  .button.previous {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  .position {
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    margin-left: -50px;
+    color: $tooltip-color-200;
+    background-color: #ffffff;
+    padding: 5px 20px;
+    border: 1px solid;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}

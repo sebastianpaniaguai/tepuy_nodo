@@ -1,0 +1,58 @@
+
+.note_pointer_left,
+.note_pointer_right {
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  min-width: 43px;
+  min-height: 31px;
+  width: auto;
+  height: auto;
+  color: #ffffff;
+  padding-top: 10px;
+  position: relative;
+  background-color: $tooltip-color-200;
+  border-radius: 15px;
+}
+
+.note_pointer_left:before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: linear-gradient(45deg, $tooltip-color-200 50%, transparent 50%);
+  left: -7px;
+  top: -4px;
+  transform: rotate(-65deg);
+}
+
+.note_pointer_right:before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: linear-gradient(45deg, $tooltip-color-200 50%, transparent 50%);
+  right: -7px;
+  top: -4px;
+  transform: rotate(-20deg);
+}
+
+.note_pointer_right {
+  background-position: -1198px 0;
+  padding-left: 5px;
+  text-align: left;
+}
+
+.note_pointer_left {
+  background-position: -1130px 0;
+  padding-right: 5px;
+  text-align: right;
+}
+
+.note_pointer_right:hover {
+  background-position: -1198px -50px;
+}
+
+.note_pointer_left:hover {
+  background-position: -1130px -50px;
+}

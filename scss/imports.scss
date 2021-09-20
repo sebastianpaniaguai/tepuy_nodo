@@ -1,0 +1,25 @@
+@import "./abstracts/variables.scss";
+@import "./abstracts/mixins.scss";
+@import "./base/base.scss";
+@import "./base/typography.scss";
+@import "./base/layout.scss";
+@import "./base/animations";
+
+@import "./components/header";
+@import "./components/footer";
+@import "./components/box-text";
+@import "./components/modal";
+@import "./components/floating-window";
+@import "./components/button";
+@import "./components/instruction";
+@import "./components/tooltip";
+@import "./components/mouse-over";
+@import "./components/menu.scss";
+@import "./components/pagination.scss";
+@import "./components/data-table.scss";
+@import "./components/accordion.scss";
+@import "./components/pointer.scss";
+
+@import "./activities/quiz.scss";
+@import "./activities/droppable.scss";
+@import "./activities/cloze.scss";
